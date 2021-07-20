@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActionSheetFooterView" customModule="FitnessAI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEL-DC-wWZ">
+                    <rect key="frame" x="0.0" y="8" width="414" height="104"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="69g-vy-XNH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="systemThickMaterial"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjx-DO-z4J">
+                    <rect key="frame" x="0.0" y="8" width="414" height="104"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="buttonTappedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="6zP-a1-YdI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zjx-DO-z4J" secondAttribute="bottom" id="511-lX-vKZ"/>
+                <constraint firstItem="AEL-DC-wWZ" firstAttribute="centerY" secondItem="Zjx-DO-z4J" secondAttribute="centerY" id="D9V-kW-dAh"/>
+                <constraint firstItem="AEL-DC-wWZ" firstAttribute="centerX" secondItem="Zjx-DO-z4J" secondAttribute="centerX" id="JOA-Us-GpI"/>
+                <constraint firstItem="Zjx-DO-z4J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KLu-Lh-LxS"/>
+                <constraint firstItem="AEL-DC-wWZ" firstAttribute="width" secondItem="Zjx-DO-z4J" secondAttribute="width" id="OCi-3M-6Hp"/>
+                <constraint firstItem="Zjx-DO-z4J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="RhJ-dA-Vho"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zjx-DO-z4J" secondAttribute="trailing" id="bmK-6S-Ag1"/>
+                <constraint firstItem="AEL-DC-wWZ" firstAttribute="height" secondItem="Zjx-DO-z4J" secondAttribute="height" id="bsD-XY-ORT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blurryBackgroundView" destination="AEL-DC-wWZ" id="0fu-g9-aUK"/>
+                <outlet property="button" destination="Zjx-DO-z4J" id="Ggc-GL-r5F"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-109.15178571428571"/>
+        </view>
+    </objects>
+</document>
